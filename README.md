@@ -1,10 +1,12 @@
-# DET_Emulation
+# C2_DDR
 
-DET_Emulation is a proof-of-concept to perform data exfiltration using popular
-3rd parties such as Twitter, Gmail, or DropBox. DET_Emulation was built in
-inspiration of [the popular repository, DET](https://github.com/sensepost/DET).
+#### Full C2 using legitimate services
 
-The difference, however, is that **DET_Emulation is an emulation of a browser
+C2_DDR is a proof-of-concept to perform data exfiltration using popular
+3rd parties such as Twitter, Gmail, or DropBox. C2_DDR was built in
+inspiration of the popular repository, [DET](https://github.com/sensepost/DET).
+
+The difference, however, is that **C2_DDR is an emulation of a browser
 window, whereas DET uses the Twitter API**. This difference is substantial when
  looking at IDS logs and network activity, since API calls will create an SSL
  handshake and certificate exchange *for every GET request the API malware
@@ -20,7 +22,7 @@ window, whereas DET uses the Twitter API**. This difference is substantial when
 
 ![image](/GET_vs_Browsing.png)
 
-Current, DET_Emulation performs one task:
+Current, C2_DDR performs one task:
 * converts a message or file into base64
 * Logs in to mobile.twitter.com
 * parses the base64 message into 280 characters 
