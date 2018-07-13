@@ -1,6 +1,8 @@
 # C2_DDR
 
-#### Full C2 using legitimate services
+Full C2 using legitimate services
+
+**This is a Proof of Concept aimed at identifying possible DLP failures. This should never be used to exfiltrate sensitive/live data**
 
 C2_DDR is a proof-of-concept to perform data exfiltration using popular
 3rd parties such as Twitter, Gmail, or DropBox. C2_DDR was built in
