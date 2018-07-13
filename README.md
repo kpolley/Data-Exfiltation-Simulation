@@ -22,7 +22,7 @@ window, whereas DET uses the Twitter API**. This difference is substantial when
 
 ![image](/GET_vs_Browsing.png)
 
-Current, C2_DDR performs one task:
+Current, C2_DDR does the following:
 * converts a message or file into base64
 * Logs in to mobile.twitter.com
 * parses the base64 message into 280 characters 
