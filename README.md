@@ -1,14 +1,12 @@
-# C2_DDR
-
-Full C2 using legitimate services
+# Data Exfiltation Simulation
 
 **This is a Proof of Concept aimed at identifying possible DLP failures. This should never be used to exfiltrate sensitive/live data**
 
-C2_DDR is a proof-of-concept to perform data exfiltration using popular
-3rd parties such as Twitter, Gmail, or DropBox. C2_DDR was built in
+Data Exfiltation Simulation is a proof-of-concept to perform data exfiltration using popular
+3rd parties such as Twitter, Gmail, or DropBox. Data Exfiltation Simulation was built in
 inspiration of the popular repository, [DET](https://github.com/sensepost/DET).
 
-The difference, however, is that **C2_DDR is an emulation of a browser
+The difference, however, is that **Data Exfiltation Simulation is an emulation of a browser
 window, whereas DET uses the Twitter API**. This difference is substantial when
  looking at IDS logs and network activity, since API calls will create an SSL
  handshake and certificate exchange *for every GET request the API malware
@@ -24,7 +22,7 @@ window, whereas DET uses the Twitter API**. This difference is substantial when
 
 ![image](/GET_vs_Browsing.png)
 
-Current, C2_DDR does the following:
+Currently, Data Exfiltation Simulation does the following:
 * converts a message or file into base64
 * Logs in to mobile.twitter.com
 * parses the base64 message into 280 characters 
